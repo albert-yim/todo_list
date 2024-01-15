@@ -13,10 +13,17 @@ const config = {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    open: true,
-    host: "127.0.0.1",
-
-    // port: 3000,
+    // proxy: {
+    //   "/api": {
+    //     target: "http://localhost:8080",
+    //     changeOrigin: true,
+    //   },
+    // },
+    allowedHosts: "all",
+    open: false,
+    hot: true,
+    // historyApiFallback: true,
+    port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -6,17 +6,52 @@
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
     <style>
+      body {
+        margin: 0;
+      }
+
       .todo-header {
+        background-color: #256edc;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 45px;
+      }
+      .header-text {
+        font-size: 50px;
+        color: #fff;
+      }
+      .buttons {
+        width: 1500px;
+        height: 110px;
+        margin-top: 74px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         background-color: red;
+      }
+      .create-btn {
+        width: 190px;
+        height: 56px;
+        border-radius: 32px;
+        border-color: transparent;
+        background-color: #256edc;
+        color: #fff;
+        font-size: 30px;
       }
     </style>
   </head>
   <body>
     <header class="todo-header">
-      <span> To Do List </span>
+      <span class="header-text">To do list</span>
     </header>
     <div class="buttons">
-      <button>Create</button>
+      <button class="create-btn">create</button>
+      <input type="radio" /><img
+        src="assets/grid_button.svg"
+        alt="gird_button"
+      />
       <div class="view-options">radio?</div>
     </div>
     <div class="todo-container">
