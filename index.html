@@ -1,12 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Webpack App</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-        <h2>Tip: Check your console</h2>
-    </body>
-    
+  <head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+      .todo-header {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="todo-header">
+      <span> To Do List </span>
+    </header>
+    <div class="buttons">
+      <button>Create</button>
+      <div class="view-options">radio?</div>
+    </div>
+    <div class="todo-container">
+      <div class="list-row">
+        <div class="row-head">
+          <div class="checkbox"></div>
+          <div class="category-circle"></div>
+          <span>Support flight</span>
+        </div>
+        <div class="row-tail">
+          <span class="due-date"> D-10 </span>
+          <div class="eidt-btn"></div>
+          <div class="delete-btn"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
