@@ -3,7 +3,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+// const isProduction = process.env.NODE_ENV == "production";
+const isProduction = false;
 
 const stylesHandler = "style-loader";
 
@@ -13,13 +14,11 @@ const config = {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    // proxy: {
-    //   "/api": {
-    //     target: "http://localhost:8080",
-    //     changeOrigin: true,
-    //   },
-    // },
     allowedHosts: "all",
+    // For resolving error which is 404 get file, (Need to set static directory)
+    static: {
+      directory: path.join(__dirname, "./"),
+    },
     open: false,
     hot: true,
     // historyApiFallback: true,
