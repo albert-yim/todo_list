@@ -11,23 +11,42 @@
     </header>
     <div class="buttons">
       <button class="create-btn">create</button>
-      <input type="radio" /><img
-        src="./assets/grid_button.svg"
-        alt="gird_button"
-      />
-      <div class="view-options">radio?</div>
+      <div class="view-options">
+        <label>
+          <input type="radio" name="viewOption" />
+          <img
+            src="./assets/grid.svg"
+            alt="gird_button"
+            width="32"
+            height="32"
+          />
+        </label>
+        <label>
+          <input type="radio" name="viewOption" />
+          <img
+            src="./assets/list.svg"
+            alt="list_button"
+            width="48"
+            height="48"
+          />
+        </label>
+      </div>
     </div>
     <div class="todo-container">
       <div class="list-row">
         <div class="row-head">
-          <div class="checkbox"></div>
+          <input type="checkbox" class="todo-checkbox" checked />
           <div class="category-circle"></div>
           <span>Support flight</span>
         </div>
         <div class="row-tail">
           <span class="due-date"> D-10 </span>
-          <div class="eidt-btn"></div>
-          <div class="delete-btn"></div>
+          <button class="list-row-action-btn">
+            <img alt="edit-btn" src="./assets/edit.svg" />
+          </button>
+          <button class="list-row-action-btn">
+            <img alt="delete-btn" src="./assets/trash.svg" />
+          </button>
         </div>
       </div>
     </div>
