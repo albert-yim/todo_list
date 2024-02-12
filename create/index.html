@@ -2,11 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Webpack App</title>
+    <title>Create Todo</title>
+    <link href="create.css" rel="stylesheet" type="text/css" />
+    <link href="../commonStyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="todo-header">
-      <span class="header-text">Create</span>
+      <span class="header-text">Create Todo</span>
     </header>
+    <div class="body-wrapper">
+      <div class="row">
+        <span>Name:</span>
+        <input class="input" id="name" />
+      </div>
+      <div class="row">
+        <span>Due date:</span>
+        <input class="input" type="date" id="dueDate" />
+      </div>
+      <div class="row">
+        <span>Due date:</span>
+        <div class="category">
+          <input type="radio" key="1" name="1" style="background: red" />
+          <input type="radio" key="2" name="2" style="background: blue" />
+        </div>
+      </div>
+      <button class="button">Create</button>
+    </div>
   </body>
 </html>
