@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background-color: #e2e3e5;
+  display: flex;
+  flex-direction: column;
+}
+.todo-header {
+  background-color: #256edc;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+}
+.header-text {
+  font-size: 50px;
+  color: #fff;
+}
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  align-self: center;
+}
