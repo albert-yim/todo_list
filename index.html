@@ -9,44 +9,46 @@
     <header class="todo-header">
       <span class="header-text">To do list</span>
     </header>
-    <div class="buttons">
-      <button class="create-btn">create</button>
-      <div class="view-options">
-        <label>
-          <input type="radio" name="viewOption" />
-          <img
-            src="./assets/grid.svg"
-            alt="gird_button"
-            width="32"
-            height="32"
-          />
-        </label>
-        <label>
-          <input type="radio" name="viewOption" />
-          <img
-            src="./assets/list.svg"
-            alt="list_button"
-            width="48"
-            height="48"
-          />
-        </label>
-      </div>
-    </div>
-    <div class="todo-container">
-      <div class="list-row">
-        <div class="row-head">
-          <input type="checkbox" class="todo-checkbox" checked />
-          <div class="category-circle"></div>
-          <span>Support flight</span>
+    <div class="body-wrapper">
+      <div class="buttons">
+        <button class="create-btn">create</button>
+        <div class="view-options">
+          <label>
+            <input type="radio" name="viewOption" />
+            <img
+              src="./assets/grid.svg"
+              alt="gird_button"
+              width="32"
+              height="32"
+            />
+          </label>
+          <label>
+            <input type="radio" name="viewOption" />
+            <img
+              src="./assets/list.svg"
+              alt="list_button"
+              width="48"
+              height="48"
+            />
+          </label>
         </div>
-        <div class="row-tail">
-          <span class="due-date"> D-10 </span>
-          <button class="list-row-action-btn">
-            <img alt="edit-btn" src="./assets/edit.svg" />
-          </button>
-          <button class="list-row-action-btn">
-            <img alt="delete-btn" src="./assets/trash.svg" />
-          </button>
+      </div>
+      <div class="todo-container">
+        <div class="list-row">
+          <div class="row-head">
+            <input type="checkbox" class="todo-checkbox" checked />
+            <div class="category-circle"></div>
+            <span>Support flight</span>
+          </div>
+          <div class="row-tail">
+            <span class="due-date"> D-10 </span>
+            <button class="list-row-action-btn">
+              <img alt="edit-btn" src="./assets/edit.svg" />
+            </button>
+            <button class="list-row-action-btn">
+              <img alt="delete-btn" src="./assets/trash.svg" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

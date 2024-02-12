@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-color: #e2e3e5;
+  display: flex;
+  flex-direction: column;
 }
 input[type="radio"] {
   position: absolute;
@@ -25,6 +27,12 @@ input[type="radio"]:checked + img {
 .header-text {
   font-size: 50px;
   color: #fff;
+}
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  align-self: center;
 }
 .buttons {
   width: 100%;
@@ -59,8 +67,6 @@ input[type="radio"]:checked + img {
 .todo-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  /* width: 1500px; */
   height: 100%;
 }
 .list-row {
@@ -70,7 +76,6 @@ input[type="radio"]:checked + img {
   font-size: 40px;
   justify-content: space-between;
   height: 120px;
-  width: 100%;
   border-radius: 16px;
   padding: 0 40px;
   background: #fff;
@@ -80,6 +85,7 @@ input[type="radio"]:checked + img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 32px;
 }
 .todo-checkbox {
   width: 40px;
@@ -89,7 +95,7 @@ input[type="radio"]:checked + img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  fill: red;
+  background-color: red;
 }
 
 .row-tail {
@@ -105,4 +111,5 @@ input[type="radio"]:checked + img {
 }
 .list-row-action-btn {
   background-color: transparent;
+  border: none;
 }
