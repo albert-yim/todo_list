@@ -7,19 +7,18 @@ body {
 .todo-header {
   background-color: #256edc;
   height: 120px;
-  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 45px;
 }
 .header-text {
-  font-size: 50px;
+  font-size: 3em;
   color: #fff;
 }
 .body-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1500px;
+  width: 80%;
   align-self: center;
 }
 .button {

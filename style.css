@@ -12,7 +12,6 @@ input[type="radio"]:checked + img {
 }
 .buttons {
   width: 100%;
-  /* width: 1500px; */
   height: 110px;
   margin-top: 74px;
   padding-right: 15px;
