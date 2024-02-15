@@ -12,7 +12,7 @@
     </header>
     <div class="body-wrapper">
       <div class="buttons">
-        <button class="button" onclick="location.href='/create'">create</button>
+        <button class="button" id="createBtn">create</button>
         <div class="view-options">
           <label>
             <input type="radio" name="viewOption" />
@@ -34,7 +34,7 @@
           </label>
         </div>
       </div>
-      <div class="todo-container">
+      <div class="todo-container" id="todoContainer">
         <div class="list-row">
           <div class="row-head">
             <input type="checkbox" class="todo-checkbox" checked />
@@ -53,5 +53,6 @@
         </div>
       </div>
     </div>
+    <script src="./src/index.js"></script>
   </body>
 </html>
