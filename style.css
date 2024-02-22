@@ -1,15 +1,16 @@
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-input[type="radio"] + img {
-  cursor: pointer;
-}
-input[type="radio"]:checked + img {
-  outline: 1px solid red;
-}
+/* For view option radio but maybe it would be deleted 
+/* input[type="radio"] { */
+/*   position: absolute; */
+/*   opacity: 0; */
+/*   width: 0; */
+/*   height: 0; */
+/* } */
+/* input[type="radio"] + img { */
+/*   cursor: pointer; */
+/* } */
+/* input[type="radio"]:checked + img { */
+/*   outline: 1px solid red; */
+/* } */
 .buttons {
   width: 100%;
   height: 110px;
@@ -80,7 +81,8 @@ input[type="radio"]:checked + img {
   border: none;
 }
 .create-modal {
-  display: block;
+  /* display: flex; */
+  display: none;
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -88,24 +90,21 @@ input[type="radio"]:checked + img {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
 }
 .modal-content {
-  background: #fff;
+  background: #e2e3e5;
   box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
-  width: max-content;
-  margin: 10% auto 0;
-}
-.modal-title {
-  background: blue;
-  color: #fff;
-  font-size: 40px;
-  padding: 16px 16px;
-}
-.modal-body {
+  width: 1000px;
+  height: 500px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
-  padding: 16px 16px;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10%; */
+  /* margin-left: 25%; */
 }
 .modal-buttons {
   display: flex;
@@ -114,14 +113,12 @@ input[type="radio"]:checked + img {
   gap: 16px;
   padding: 16px 16px;
 }
-.modal-buttons button {
-  height: 40px;
-  border: 1px solid grey;
-  border-radius: 16px;
-  font-size: 24px;
+.button[id="cancelModal"] {
+  background: grey;
 }
 table {
   font-size: 30px;
+  border-spacing: 32px;
 }
 .input {
   height: 60px;
@@ -129,6 +126,33 @@ table {
   border-radius: 16px;
   font-size: 30px;
   padding: 0 16px;
+}
+
+.input[type="date"] {
+  background: #fff;
+  border: 1px solid gray;
+}
+
+.category-radio {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+/*For style of default radio button*/
+.category-radio::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: inherit;
+  content: "";
+}
+/*if checked, following basic radio style
+* but color be handled by accent-color*/
+.category-radio:checked::after {
+  background: transparent;
 }
 
 @media screen and (max-width: 1280px) {

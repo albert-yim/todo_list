@@ -1,6 +1,13 @@
 const createBtn = document.getElementById("createBtn");
 const todoContainer = document.getElementById("todoContainer");
 
+/**Modal elements */
+const modal = document.getElementById("createModal");
+const modalOkBtn = document.getElementById("okModal");
+const modalCancelBtn = document.getElementById("cancelModal");
+const modalNameField = document.getElementById("name");
+const modalDateField = document.getElementById("dueDate");
+// const modalCategoryRadio =document.getElementById("")
 /*
  *createTodo function
  *Input: title: string, dueDate: string(ISO)
@@ -29,5 +36,14 @@ const createTodo = (title, dueDate) => {
 };
 
 createBtn.onclick = () => {
-  todoContainer.append(createTodo("test", "D-10"));
+  // todoContainer.append(createTodo("test", "D-10"));
+  modal.style.display = "flex";
+};
+
+modalOkBtn.onclick = () => {
+  todoContainer.append(createTodo(modalNameField.value, modalDateField.value));
+  modal.style.display = "none";
+};
+modalCancelBtn.onclick = () => {
+  modal.style.display = "none";
 };

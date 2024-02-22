@@ -13,26 +13,26 @@
     <div class="body-wrapper">
       <div class="buttons">
         <button class="button" id="createBtn">create</button>
-        <div class="view-options">
-          <label>
-            <input type="radio" name="viewOption" />
-            <img
-              src="./assets/grid.svg"
-              alt="gird_button"
-              width="32"
-              height="32"
-            />
-          </label>
-          <label>
-            <input type="radio" name="viewOption" />
-            <img
-              src="./assets/list.svg"
-              alt="list_button"
-              width="48"
-              height="48"
-            />
-          </label>
-        </div>
+        <!-- <div class="view-options"> -->
+        <!--   <label> -->
+        <!--     <input type="radio" name="viewOption" /> -->
+        <!--     <img -->
+        <!--       src="./assets/grid.svg" -->
+        <!--       alt="gird_button" -->
+        <!--       width="32" -->
+        <!--       height="32" -->
+        <!--     /> -->
+        <!--   </label> -->
+        <!--   <label> -->
+        <!--     <input type="radio" name="viewOption" /> -->
+        <!--     <img -->
+        <!--       src="./assets/list.svg" -->
+        <!--       alt="list_button" -->
+        <!--       width="48" -->
+        <!--       height="48" -->
+        <!--     /> -->
+        <!--   </label> -->
+        <!-- </div> -->
       </div>
       <div class="todo-container" id="todoContainer">
         <div class="list-row">
@@ -53,28 +53,66 @@
         </div>
       </div>
     </div>
-    <div class="create-modal">
+    <div class="create-modal" id="createModal">
       <div class="modal-content">
-        <div class="modal-title">Create</div>
-        <div class="modal-body">
-          <table>
-            <tr class="row">
-              <td>title:</td>
-              <td>
-                <input class="input" id="name" />
-              </td>
-            </tr>
-            <tr class="row">
-              <td>Due date:</td>
-              <td>
-                <input class="input" type="date" id="dueDate" />
-              </td>
-            </tr>
-          </table>
-        </div>
+        <table>
+          <tr class="row">
+            <td>Title:</td>
+            <td>
+              <input class="input" id="name" />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>Due date:</td>
+            <td>
+              <input class="input" type="date" id="dueDate" />
+            </td>
+          </tr>
+          <tr class="row">
+            <td>Category</td>
+            <td>
+              <input
+                class="category-radio"
+                type="radio"
+                value="1"
+                name="category"
+                style="background: red; accent-color: red"
+                checked
+              />
+              <input
+                class="category-radio"
+                type="radio"
+                value="2"
+                name="category"
+                style="background: orange; accent-color: orange"
+              />
+              <input
+                class="category-radio"
+                type="radio"
+                value="3"
+                name="category"
+                style="background: yellow; accent-color: yellow"
+              />
+              <input
+                class="category-radio"
+                type="radio"
+                value="4"
+                name="category"
+                style="background: green; accent-color: green"
+              />
+              <input
+                class="category-radio"
+                type="radio"
+                value="5"
+                name="category"
+                style="background: blue; accent-color: blue"
+              />
+            </td>
+          </tr>
+        </table>
         <div class="modal-buttons">
-          <button id="okModal">create</button>
-          <button id="cancelModal">cancel</button>
+          <button class="button" id="okModal">create</button>
+          <button class="button" id="cancelModal">cancel</button>
         </div>
       </div>
     </div>
