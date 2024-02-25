@@ -34,7 +34,8 @@
 .todo-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  gap: 32px;
+  margin-bottom: 32px;
 }
 .list-row {
   display: flex;
